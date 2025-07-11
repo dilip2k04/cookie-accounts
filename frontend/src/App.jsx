@@ -5,7 +5,7 @@ import axios from 'axios';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = 'https://cookie-accounts-backend.onrender.com/api';
 axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
 
 function App() {
